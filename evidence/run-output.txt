@@ -1,0 +1,36 @@
+# KushBitx MCP agent - sanitized run
+Generated: 2026-09-20T12:32:21.622Z
+Runtime: MCP-compatible agent (MCP client + MCP server over MCP transport, planner-driven tool calls)
+Tools: kushbitx_preview_token, kushbitx_evaluate_spend, kushbitx_get_payment_challenge
+Signed: false; Paid: false
+SpendGuard is advisory. It does not execute or block a transaction. Enforcement belongs to the signing or execution layer.
+No private key, seed, PAYMENT-SIGNATURE, recovery key, wallet address under test, or personal data appears in this log.
+
+preview: PASS
+spendguard: PASS decision=HUMAN_APPROVAL executionAuthorized=false
+x402 challenge: PASS service=token-risk path=/api/token-risk x402Version=2
+
+{
+  "trace": [
+    {
+      "step": "listTools",
+      "tools": [
+        "kushbitx_preview_token",
+        "kushbitx_evaluate_spend",
+        "kushbitx_get_payment_challenge"
+      ]
+    },
+    {
+      "step": "kushbitx_preview_token",
+      "ok": true
+    },
+    {
+      "step": "kushbitx_evaluate_spend",
+      "ok": true
+    },
+    {
+      "step": "kushbitx_get_payment_challenge",
+      "ok": true
+    }
+  ]
+}
