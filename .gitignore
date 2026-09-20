@@ -1,0 +1,8 @@
+node_modules/
+evidence/run-output.txt
+.env
+*.pem
+kushbitx-recovery.json
+kushbitx-*-recovery.json
+kushbitx-report.json
+kushbitx-*-report.json
