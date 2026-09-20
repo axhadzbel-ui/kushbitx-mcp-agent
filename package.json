@@ -1,0 +1,21 @@
+{
+    "name": "kushbitx-mcp-agent",
+    "version": "1.0.0",
+    "private": false,
+    "type": "module",
+    "description": "MCP-compatible agent driving @kushbitx/sdk: free token preview, advisory SpendGuard evaluation, unsigned x402 challenge discovery. No key, no signing, no payment.",
+    "engines": {
+          "node": ">=22"
+    },
+    "scripts": {
+          "start": "node src/agent.mjs",
+          "server": "node src/server.mjs",
+          "test": "node --test test/*.test.mjs"
+    },
+    "dependencies": {
+          "@kushbitx/sdk": "0.1.0",
+          "@modelcontextprotocol/sdk": "^1.30.0",
+          "zod": "^3.25.76"
+    },
+    "license": "Apache-2.0"
+}
